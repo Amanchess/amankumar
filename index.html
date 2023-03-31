@@ -1,99 +1,95 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🐼world</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
   <style>
     html,body{
-  margin:0px;
-  height:100%;
-  /* font-family: 'Lobster', cursive; */
-}
-.bg_heart{
-  position:relative;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
- overflow:hidden;
- /* background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCM-Z5iDhP03HWtbf5ZpPJdm9rD8zMVnA1F7wcQ0FFw&usqp=CAU&ec=48665701'); */
- background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCM-Z5iDhP03HWtbf5ZpPJdm9rD8zMVnA1F7wcQ0FFw&usqp=CAU&ec=48665701");
-  /* background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCM-Z5iDhP03HWtbf5ZpPJdm9rD8zMVnA1F7wcQ0FFw&usqp=CAU&ec=48665701"); */
-  background-size:100% 100%;
-  z-index:-1;
-}
-.container { 
-  position:absolute; 
-  top:0; 
-  left:0; 
-  height:100%; 
-  width:100%; 
-  text-align:center; 
-  color: blue; 
-  font-family: 'fiolex girl', cursive; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.container { 
-  position:absolute; 
-  top:0; 
-  left:0; 
-  height:100%; 
-  width:100%; 
-  text-align:center; 
-  color: gold; 
-  font-family: 'fiolex girl', cursive; 
-  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0
+      margin:0px;
+      height:100%;
+      /* font-family: 'Lobster', cursive; */
+    }
 
+    .bg_heart{
+      position:relative;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      /* background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCM-Z5iDhP03HWtbf5ZpPJdm9rD8zMVnA1F7wcQ0FFw&usqp=CAU&ec=48665701'); */
+      background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCM-Z5iDhP03HWtbf5ZpPJdm9rD8zMVnA1F7wcQ0FFw&usqp=CAU&ec=48665701");
+      /* background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCM-Z5iDhP03HWtbf5ZpPJdm9rD8zMVnA1F7wcQ0FFw&usqp=CAU&ec=48665701"); */
+      background-size:100% 100%;
+      z-index:-1;
+    }
 
+    .container { 
+      position:absolute; 
+      top:0; 
+      left:0; 
+      height:100%; 
+      width:100%; 
+      text-align:center; 
+      color: gold; /* changed color to gold */
+      font-family: 'fiolex girl', cursive; 
+      text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    }
 
+    .heart{
+      position:absolute;
+      top:-50%;
+      transform:rotate(-45deg);
+      -webkit-transform:rotate(-45deg);
+      -moz-transform:rotate(-45deg);
+      -m-transform:rotate(-45deg);
+    }
 
-.heart{
-  position:absolute;
-  top:-50%;
-  transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);
-  -moz-transform:rotate(-45deg);
-  -m-transform:rotate(-45deg);
-}
-.heart:before{
-  position:absolute;
-  top:-50%;
-  left:0;
-  display:block;
-  content:"";
-  width:100%;
-  height:100%;
-  background:inherit;
-  border-radius:100%;
-}
-.heart:after{
-  position:absolute;
-  top:0;
-  right:-50%;
-  display:block;
-  content:"";
-  width:100%;
-  height:100%;
-  background:inherit;
-  border-radius:100%;
-}
+    .heart:before{
+      position:absolute;
+      top:-50%;
+      left:0;
+      display:block;
+      content:"";
+      width:100%;
+      height:100%;
+      background:inherit;
+      border-radius:100%;
+    }
 
-@keyframes love {
-  0%{top:110%}
-}
-@-webkit-keyframes love {
-  0%{top:110%}
-}
-@-moz-keyframes love {
-  0%{top:110%}
-}
-@-ms-keyframes love {
-  0%{top:110%}
-}
+    .heart:after{
+      position:absolute;
+      top:0;
+      right:-50%;
+      display:block;
+      content:"";
+      width:100%;
+      height:100%;
+      background:inherit;
+      border-radius:100%;
+    }
+
+    @keyframes love {
+      0%{top:110%}
+    }
+
+    @-webkit-keyframes love {
+      0%{top:110%}
+    }
+
+    @-moz-keyframes love {
+      0%{top:110%}
+    }
+
+    @-ms-keyframes love {
+      0%{top:110%}
+    }
   </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.
+>
 </head>
 
 <body id="x" onclick="play()">
