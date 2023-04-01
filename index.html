@@ -124,16 +124,16 @@
    
   var i = 0; 
     var txt1 = "Hi  "+ name +".....!  <<               Now I wan't to say something special to you. <<<                So , Please read everything carefully...!                                                                           > When I saw you for the first time < You seems something Special to me.  <<                  As the days goes < you get closer to me....! <<                           I don't know the reason why your thoughts always resonates inside my mind...!                                                     > Everything about you is always intresting for me...!                     << I am somewhat nervous Because I haven't said these words to anyone and I won't say to anyone in future...!                                                     > I know that we're good friends,             but I can't help but feel that there could be something more between us.                       I want to be with you and take care of you. I want to make you happy and see you smile every day.                 <  I want to create beautiful memories with you and share our lives together.           << So, "+ name +", I ask you: will you be mine?                                                        > Will you give me the honor of being your partner, your confidant, and your love?       I Love You <"+ name +"....! |                  <<<< Give me One chance to Prove my Love ...!"; 
- var speed = 50; 
- typeWriter(); 
- function typeWriter() { 
-   if (i < txt1.length) {         
-      if(txt1.charAt(i)=='<') 
-       document.getElementById("text1").innerHTML += '</br>' 
-     else if(txt1.charAt(i)=='>') 
-       document.getElementById("text1").innerHTML = '' 
-     else if(txt1.charAt(i)=='|') 
-       { 
+  var speed = 50; 
+  typeWriter(); 
+  function typeWriter() { 
+    if (i < txt1.length) {         
+       if(txt1.charAt(i)=='<') 
+         document.getElementById("text1").innerHTML += '</br>' 
+      else if(txt1.charAt(i)=='>') 
+         document.getElementById("text1").innerHTML = '' 
+      else if(txt1.charAt(i)=='|') 
+        { 
          $(".bg_heart").css("background-image", "url('https://img.lovepik.com/background/20211029/medium/lovepik-lovers-cellphone-wallpaper-background-image_400335236.jpg')") 
        } 
      else 
